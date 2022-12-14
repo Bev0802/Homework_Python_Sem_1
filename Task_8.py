@@ -10,7 +10,6 @@ print("Введите координаты точки")
 x = int(input("X: "))
 y = int(input("Y: "))
 
-
 # Метод определяет в какой четверти находится число
 def Quarter(xc, yc):
     if (xc > 0 and yc > 0):
@@ -23,7 +22,7 @@ def Quarter(xc, yc):
         return 4
     return 0
 
-
+#Вывод результата
 quarter = Quarter(x, y)
 if quarter > 0:
     print(f"Указанные координаты соответ четверти {quarter}")
