@@ -5,22 +5,23 @@
 # - x=2; y=4-> 1
 # - x=-34; y=-30 -> 3
 
-# Получение данных для обработки
-print("Введите координаты точки")
-x = int(input("X: "))
-y = int(input("Y: "))
-
 # Метод определяет в какой четверти находится число
 def Quarter(xc, yc):
     if (xc > 0 and yc > 0):
         return 1
-    if (xc < 0 and yc > 0):
+    elif (xc < 0 and yc > 0):
         return 2
-    if (xc < 0 and yc < 0):
+    elif (xc < 0 and yc < 0):
         return 3
-    if (xc > 0 and yc < 0):
+    elif (xc > 0 and yc < 0):
         return 4
     return 0
+
+
+# Получение данных для обработки
+print("Введите координаты точки")
+x = int(input("X: "))
+y = int(input("Y: "))
 
 #Вывод результата
 quarter = Quarter(x, y)
