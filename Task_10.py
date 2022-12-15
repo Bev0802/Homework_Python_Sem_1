@@ -3,3 +3,15 @@
 
 # - A (3,6); B (2,1) -> 5,09
 # - A (7,-5); B (1,-1) -> 7,21
+
+print("Введите координаты точки А")
+ax = int(input("X: "))
+ay = int(input("Y: "))
+
+print("Введите координаты точки B")
+bx = int(input("X: "))
+by = int(input("Y: "))
+
+distance = ((ax-bx)*(ax-bx) + (ay-by)*(ay-by))**0.5
+
+print(f"Расстояние между точками = {round(distance, 2)}")
