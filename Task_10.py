@@ -13,5 +13,10 @@ bx = int(input("X: "))
 by = int(input("Y: "))
 
 distance = ((ax-bx)*(ax-bx) + (ay-by)*(ay-by))**0.5
+distance1 = ((ax-bx)**2 + (ay-by)**2)**0.5
 
 print(f"Расстояние между точками = {round(distance, 2)}")
+print(f"Второй вариант = {round(distance1, 2)}")
+
+
+
